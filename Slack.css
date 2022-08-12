@@ -1,2 +1,99 @@
-It worked! Woot!!
-More to come!!!
+/*Sidebar Headings*/
+.p-channel_sidebar__section_heading_label {
+	border-bottom: 1px solid #FFF2;
+	position: relative;
+	top: -8px;
+}
+
+.p-channel_sidebar__section_heading_label>span {
+	color: #fff5;
+	/*text-transform: uppercase;*/
+	text-transform: lowercase;
+	font-size: 0.9em;
+	position: relative;
+	top: 7px;
+	font-weight: normal;
+}
+
+/*Sidebar Names*/
+.p-channel_sidebar__channel {
+	/*margin-left: 30px;*/
+	/*margin-right: -30px;*/
+	/*color: yellow;*/
+}
+
+.p-channel_sidebar__channel>span:first-of-type,
+.p-channel_sidebar__channel>i:first-of-type {
+	position: relative;
+	left: 28px;
+}
+
+.p-channel_sidebar__channel>span:first-of-type {
+	margin-right: 28px;
+}
+
+
+.p-channel_sidebar__channel>span>span {}
+
+/*.p-channel_sidebar__name {*/
+/*	white-space: normal; */
+/*}*/
+
+From GitHub
+
+/* Respect PRE: no wrap */
+.file_container.snippet_container.snippet_wrap .CodeMirror .CodeMirror-code>div pre,
+.file_container.snippet_container.snippet_wrap .sssh-code .sssh-line pre,
+.message .file_container.snippet_container .CodeMirror .CodeMirror-code>div pre,
+.message .file_container.snippet_container .sssh-code .sssh-line pre {
+	white-space: pre;
+}
+
+/* Respect PRE: no wrap */
+.c-snippet--wrap .CodeMirror-code {
+	overflow-x: scroll;
+}
+
+.c-snippet--wrap .CodeMirror-code>div>pre {
+	white-space: pre;
+}
+
+pre.special_formatting {
+	white-space: pre;
+	overflow-x: scroll;
+}
+
+/* Bot messages: fixed font */
+/* .c-message is 3.0 notation */
+span.c-message_attachment__text,
+.c-snippet__code,
+ts-message[data-bot-id] .message_body .msg_inline_attachment_column {
+	font-family: Consolas, monaco, "Ubuntu Mono", courier, monospace;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+/* Bot messages: ovrride 600px width limitation ; highlight */
+/* .c-message is 3.0 notation */
+.c-message .c-message__attachments,
+.c-message .c-message_attachment {
+	max-width: inherit;
+}
+
+.c-message .c-message_attachment__body {
+	color: #333333;
+	background-color: #f9f9f9;
+}
+
+/* 2.X */
+ts-message[data-bot-id] .message_body .attachment_group {
+	max-width: inherit;
+	color: #333333;
+	background-color: #f9f9f9;
+}
+
+/* Bot messages: ovrride image size limitation */
+ts-message[data-bot-id] .message_body .attachment_group .file_preview_preserve_aspect_ratio {
+	width: 100% !important;
+	height: 100% !important;
+}
